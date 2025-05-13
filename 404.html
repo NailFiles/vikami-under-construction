@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting...</title>
-
-  <!-- Instant Redirect to Homepage -->
-  <meta http-equiv="refresh" content="0; url=https://vikami.ca" />
-  <script>
-    window.location.href = "https://vikami.ca";
-  </script>
-</head>
-<body>
-  <p>If you are not redirected, <a href="https://vikami.ca">click here</a>.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      // Send the user back to root so index.html can load
+      window.location.replace("/");
+    </script>
+  </head>
+  <body>
+    <p>If you're not redirected, <a href="/">click here</a>.</p>
+  </body>
 </html>
+
